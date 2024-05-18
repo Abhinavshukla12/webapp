@@ -101,7 +101,10 @@ header {
 }
 
 .dropdown ul li a:hover {
-  background-color: #f0f0f0;
+  background-color: #4d4f4d;
+  color: white;
+  max-height: 50px;
+  max-width: 100%;
 }
 
 footer {
