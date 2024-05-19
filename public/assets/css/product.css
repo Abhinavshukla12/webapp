@@ -1,0 +1,71 @@
+.card-img-top{
+    max-width: 70%;
+    max-height: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .product {
+    margin-bottom: 40px;
+  }
+
+  .product img {
+    margin-bottom: 20px;
+  }
+
+  .card-body{
+    text-align: center;
+  }
+  
+  /* navbar css */
+  .navbar-brand{
+    color: #000;
+    font-weight: bolder;
+    font-size: x-large;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-brand:hover{
+    color: white;
+  }
+
+  .nav-link{
+    color: #000;
+    font-weight: bold;
+  }
+
+  .nav-link:hover{
+    color: white;
+  }
+
+  .dropdown-menu{
+    background-color: white;
+    color: black;
+  }
+
+  .dropdown-item:hover{
+    background-color: #ffc107;
+  }
+
+  .dropdown-item{
+    color: #000;
+    font-weight: bold;
+  }
+
+  .display-5{
+    color: #fff;
+  }
+
+  /* footer css */
+  .text-uppercase{
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .text-center{
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
