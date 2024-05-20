@@ -19,8 +19,8 @@
 <div class="container">
         <nav>
             <div class="logo">
-                <h1>A9</h1>
-                <h5>PRINTED T-SHIRT</h5>
+                <h1><a href="">A9</a></h1>
+                <h5><a href="">PRINTED T-SHIRT</a></h5>
             </div>
             <ul>
                 <li>

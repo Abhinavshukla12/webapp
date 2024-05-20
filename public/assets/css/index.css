@@ -13,12 +13,35 @@ nav{
     justify-content: space-between;
     background-color: #eeeeee;
     box-shadow: 0px 2px 2px 2px rgb(204, 203, 203);
-    padding: 20px;
+    padding: 16px;
 }
  
-nav .logo{
+
+/* Logo Section */
+.logo {
     margin-left: 45px;
     font-size:22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Logo Heading */
+.logo h1 a {
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+/* Logo Subheading */
+.logo h5 a {
+    font-size: 1em;
+    color: #777;
+    transition: color 0.3s ease;
 }
 
 nav h1{
