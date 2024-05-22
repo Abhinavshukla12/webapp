@@ -1,0 +1,13 @@
+CRITICAL - 2024-05-22 09:03:37 --> ErrorException: Cannot redeclare App\Controllers\Home_page::index()
+[Method: GET, Route: index]
+in APPPATH\Controllers\Home_page.php on line 19.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-05-22 09:04:35 --> Error: Cannot call constructor
+[Method: GET, Route: index]
+in APPPATH\Controllers\Home_page.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home_page->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
