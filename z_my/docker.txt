@@ -1,0 +1,137 @@
+docker-compose build -t ci450
+
+docker-compose down
+docker-compose build
+docker-compose up
+
+docker-compose down
+docker-compose up --build
+
+docker system prune -a
+docker image prune -a
+docker buildx prune -a
+
+
+
+- .env:/var/www/html/.env
+container_name: phpmyadmin
+ports:
+      - "3306:3306"
+
+
+# Lists
+docker ps -a  # List all containers (should only show active ones)
+docker images  # List Docker images
+docker volume ls  # List Docker volumes
+docker network ls  # List Docker networks
+
+
+
+Certainly! Here's a list of some useful Docker commands categorized by their functionality:
+
+Managing Containers:
+Create a new container: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+List running containers: docker ps
+List all containers (including stopped ones): docker ps -a
+Start a stopped container: docker start CONTAINER_ID
+Stop a running container: docker stop CONTAINER_ID
+Restart a container: docker restart CONTAINER_ID
+Remove a container: docker rm CONTAINER_ID
+
+Managing Images:
+
+List downloaded images: docker images
+Download an image: docker pull IMAGE_NAME:TAG
+Remove an image: docker rmi IMAGE_NAME:TAG
+Remove all unused images: docker image prune
+Build an image from a Dockerfile: docker build [OPTIONS] PATH
+
+Managing Volumes:
+
+List volumes: docker volume ls
+Create a volume: docker volume create VOLUME_NAME
+Remove a volume: docker volume rm VOLUME_NAME
+
+Network Operations:
+
+List networks: docker network ls
+Create a network: docker network create NETWORK_NAME
+Connect a container to a network: docker network connect NETWORK_NAME CONTAINER_NAME
+Disconnect a container from a network: docker network disconnect NETWORK_NAME CONTAINER_NAME
+
+Docker Compose:
+
+Start services defined in a Compose file: docker-compose up
+Stop services defined in a Compose file: docker-compose down
+Build and start services defined in a Compose file: docker-compose up --build
+
+System and Cleanup:
+
+Display Docker system information: docker info
+Show disk usage: docker system df
+Remove all unused resources (containers, images, volumes, networks): docker system prune -a
+
+Inspecting Docker Resources:
+
+Inspect a container: docker inspect CONTAINER_ID
+Inspect an image: docker image inspect IMAGE_NAME:TAG
+Inspect a volume: docker volume inspect VOLUME_NAME
+Inspect a network: docker network inspect NETWORK_NAME
+
+Logs and Troubleshooting:
+
+View logs of a container: docker logs CONTAINER_ID
+Enter a running container (opens a shell): docker exec -it CONTAINER_ID /bin/bash
+
+
+
+
+
+this is removed 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ci450
+	
+	
+	
+for loading apache-config
+# Copy custom Apache configuration
+COPY apache-config.conf /usr/local/apache2/conf/apache-config.conf
+
+
+
+
+
+
+inside dockerfile paste below code for composer
+
+# Use an official PHP image as the base image
+FROM php:8.1-cli
+
+# Install system dependencies
+RUN apt-get update && \
+    apt-get install -y zip unzip && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the composer.json and composer.lock files to the container
+COPY composer.json composer.lock ./
+
+# Run Composer to install dependencies
+RUN composer install --no-scripts --no-autoloader
+
+# Copy the rest of the application files to the container
+COPY . .
+
+# Run any additional setup commands (if needed)
+# RUN php artisan migrate
+
+# Specify the entry point command to run when the container starts
+CMD ["php", "index.php"]
