@@ -5,9 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-//for login 
-$routes->get('form', 'Validation::index');
-$routes->post('validation/submit', 'Validation::submit');
+$routes->get('/', 'Home::index');
 
-//home page
-$routes->get('index', 'Home_page::index');
+// Load separate route filess
+require APPPATH . 'Routes/webapp_routes.php';
