@@ -2,28 +2,45 @@
 
 <?= $this->section('content') ?>
 <div class="container">
-    <div class="jumbotron mt-4">
-        <h1 class="display-4">Welcome to Our Website!</h1>
-        <p class="lead">This is the homepage of our web application built with CodeIgniter 4.5.</p>
-        <hr class="my-4">
-        <p>Explore the features and functionalities we offer.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Welcome to Our T-Shirt Store</h1>
+            <p>Find the coolest t-shirts here!</p>
+        </div>
     </div>
+
     <div class="row">
         <div class="col-md-4">
-            <h2>Feature One</h2>
-            <p>Details about the first feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="card">
+                <img src="tshirt1.jpg" class="card-img-top" alt="T-Shirt 1">
+                <div class="card-body">
+                    <h5 class="card-title">T-Shirt 1</h5>
+                    <p class="card-text">$20</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
         </div>
+
         <div class="col-md-4">
-            <h2>Feature Two</h2>
-            <p>Details about the second feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="card">
+                <img src="tshirt2.jpg" class="card-img-top" alt="T-Shirt 2">
+                <div class="card-body">
+                    <h5 class="card-title">T-Shirt 2</h5>
+                    <p class="card-text">$25</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
         </div>
+
         <div class="col-md-4">
-            <h2>Feature Three</h2>
-            <p>Details about the third feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="card">
+                <img src="tshirt3.jpg" class="card-img-top" alt="T-Shirt 3">
+                <div class="card-body">
+                    <h5 class="card-title">T-Shirt 3</h5>
+                    <p class="card-text">$30</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

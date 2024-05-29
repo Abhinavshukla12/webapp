@@ -9,35 +9,14 @@
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        .product {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        .product img {
-            width: 100%;
-            height: auto;
-        }
-        .product .product-details {
-            padding: 15px;
-        }
-        .product .product-rating i {
-            color: #f8c146;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-        .footer-links a {
-            color: #000;
-            margin-right: 15px;
+        .container{
+            max-width: 100%;
         }
         .dropdown:hover .dropdown-menu {
             display: block;
         }
         .navbar-brand {
-            font-size: 1.5rem; /* Make the brand name larger */
+            font-size: 1.5rem;
             font-weight: bold;
         }
         .dropdown-menu {
