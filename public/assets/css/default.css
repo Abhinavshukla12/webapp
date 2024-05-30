@@ -1,0 +1,14 @@
+.container{
+    max-width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.dropdown-menu {
+    left: auto;
+    right: 0;
+}

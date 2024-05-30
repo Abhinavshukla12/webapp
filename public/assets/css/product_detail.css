@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.alert {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.product-card .card-text {
+    margin: 0.5rem 0;
+}
+
+.product-card .btn {
+    margin-top: 0.5rem;
+}
+
+.product-detail img {
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.product-detail h2 {
+    margin-bottom: 1rem;
+}
+
+.product-detail h4 {
+    color: #ff5722;
+}
+
+.product-detail p {
+    font-size: 1.1rem;
+}

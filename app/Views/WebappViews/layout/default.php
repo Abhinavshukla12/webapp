@@ -8,22 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <style>
-        .container{
-            max-width: 100%;
-        }
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .dropdown-menu {
-            left: auto;
-            right: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="<?= base_url('assets/css/index.css')?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/default.css')?>">
 </head>
 
 <body>

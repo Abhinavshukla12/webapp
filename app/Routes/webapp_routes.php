@@ -8,6 +8,7 @@ $routes->group('ecom/', ['namespace' => 'App\Controllers\WebappControllers'], st
     
     //project routes
     $routes->get('index', 'Dashboard_controller::index');
+    $routes->get('product/detail/(:num)', 'Product::detail/$1');
     $routes->get('shop', 'Shop_controller::shop');
     $routes->get('cart', 'cart_controller::cart');
     $routes->get('wishlist', 'wishlist_controller::wishlist');
