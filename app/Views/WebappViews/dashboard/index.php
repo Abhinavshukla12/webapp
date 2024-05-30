@@ -46,7 +46,7 @@
                 <div class="card-body">
                     <p class="card-text">Top Product <?= $i ?></p>
                     <p class="card-text">$<?= 19.99 + $i * 5 ?></p>
-                    <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-primary btn-block">View Details</a>
+                    <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-secondary btn-block">View Details</a>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
                         $<?= 14.99 + $i * 5 ?>
                         <span class="text-muted"><del>$<?= 19.99 + $i * 5 ?></del></span>
                     </p>
-                    <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-primary btn-block">View Details</a>
+                    <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-secondary btn-block">View Details</a>
                 </div>
             </div>
         </div>

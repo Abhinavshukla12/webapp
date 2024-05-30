@@ -39,8 +39,8 @@
 
             <!-- Buttons -->
             <div class="mt-4">
-                <button class="btn btn-success btn-lg">Add to Cart</button>
-                <button class="btn btn-primary btn-lg">Buy Now</button>
+                <button class="btn btn-secondary btn-lg">Add to Cart</button>
+                <button class="btn btn-secondary btn-lg">Buy Now</button>
             </div>
 
             <!-- Customer Reviews -->
@@ -70,7 +70,7 @@
                     <div class="card-body text-center">
                         <p class="card-text">Related Product <?= $i ?></p>
                         <p class="card-text">$<?= 19.99 + $i * 5 ?></p>
-                        <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-outline-primary btn-block">View Details</a>
+                        <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-outline-secondary btn-block">View Details</a>
                     </div>
                 </div>
             </div>
