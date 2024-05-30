@@ -61,7 +61,7 @@
 
     <!-- Related Products -->
     <div class="mt-5">
-        <h4 class="text-center">Related Products</h4>
+        <h4 class="text-center">Top Selling Products</h4>
         <div class="row">
             <?php for ($i = 1; $i <= 4; $i++): ?>
             <div class="col-sm-6 col-md-3">
