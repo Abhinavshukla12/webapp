@@ -44,7 +44,7 @@
             <div class="card mb-4 shadow-sm product-card">
                 <img src="<?= base_url("assets/img/tp$i.jpg") ?>" class="card-img-top" alt="Top Product <?= $i ?>">
                 <div class="card-body">
-                    <p class="card-text">Top Product <?= $i ?></p>
+                    <p class="card-text">Top  <?= $i ?></p>
                     <p class="card-text">$<?= 19.99 + $i * 5 ?></p>
                     <a href="<?= base_url("ecom/product/detail/$i") ?>" class="btn btn-secondary btn-block">View Details</a>
                 </div>
